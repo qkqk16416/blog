@@ -53,7 +53,7 @@ export default {
                     collapsed: true,
                     items: [
                         { text: '基础', link: '/interview/Vue/index.md' },
-                        { text: '进阶', link: '/interview/Vue/advanced' },
+                        // { text: '进阶', link: '/interview/Vue/advanced' },
                     ]
                 },
                 {
