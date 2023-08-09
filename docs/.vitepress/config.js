@@ -1,98 +1,104 @@
 export default {
-    title: '码路芽子1', // 博客的标题
-    description: 'mlyz 的个人博客', // 博客的介绍
-    base: '/blog/', // 如果想用 https://mlyz.wdy.github.io/blog/ 访问，那么这句话必填
+    title: '切克切克的个人博客',
+    description: '切克切克的个人博客',
+    base: '/blog/',
     themeConfig: {
         logo: "/images/logo.png", // 页面上显示的logo
-        nav: [ // 页面右上角的导航
-            { text: "vue", link: "/articles/vue/上传素材到COS" },
-            { text: "uniapp", link: "/articles/uniapp/一键登录" },
-            {
-                text: '博客文档',
-                items: [ // 可以配置成下拉
-                    { text: 'JavaScript 核心系列', link: '/articles/javaScript-core/构造函数、原型、原型链' },
-                    { text: 'Vue 三方组件库', link: '/articles/libs/VForm3低代码初体验' },
-                    { text: '其他', link: '/articles/other/nvm管理node' },
-                ]
-            }
+        nav: [
+            // 页面右上角的导航
+            // { text: "vue", link: "/articles/vue/上传素材到COS" },
+            // { text: "uniapp", link: "/articles/uniapp/一键登录" },
+            // {
+            //     text: '博客文档',
+            //     items: [ // 可以配置成下拉
+            //         { text: 'JavaScript 核心系列', link: '/articles/javaScript-core/构造函数、原型、原型链' },
+            //         { text: 'Vue 三方组件库', link: '/articles/libs/VForm3低代码初体验' },
+            //         { text: '其他', link: '/articles/other/nvm管理node' },
+            //     ]
+            // }
         ],
-        sidebar: { // 侧边栏，可以分组
-            "/articles/vue/": [
+        sidebar: {
+            '/articles/': [
+                { text: 'vitepress搭建博客', link: '/articles/vitepress.md' }
+            ],
+            '/interview/': [
                 {
-                    text: "基础",
+                    text: 'HTML',
+                    collapsed: true,
                     items: [
+                        { text: '基础', link: '/interview/HTML/' },
+                        { text: '进阶', link: '/interview/HTML/advanced' },
                     ],
+                    sidebarDepth: 3
                 },
                 {
-                    text: "代码段",
+                    text: 'CSS',
+                    collapsed: true,
                     items: [
-                        {
-                            text: "上传素材到COS",
-                            link: "/articles/vue/上传素材到COS",
-                        },
-                        {
-                            text: "文件下载",
-                            link: "/articles/vue/文件下载",
-                        },
-                    ],
+                        { text: '基础', link: '/interview/CSS/' },
+                        { text: '进阶', link: '/interview/CSS/advanced' },
+                    ]
+                },
+                {
+                    text: 'Javascript',
+                    collapsed: true,
+                    items: [
+                        { text: '基础', link: '/interview/Javascript/' },
+                        { text: '进阶', link: '/interview/Javascript/advanced' },
+                        { text: '困难', link: '/interview/Javascript/nightmare' },
+                    ]
+                },
+                {
+                    text: 'Vue',
+                    collapsed: true,
+                    items: [
+                        { text: '基础', link: '/interview/Vue/index.md' },
+                        { text: '进阶', link: '/interview/Vue/advanced' },
+                    ]
+                },
+                {
+                    text: '浏览器',
+                    collapsed: true,
+                    items: [
+                        { text: '基础', link: '/interview/Vue/' },
+                        { text: '进阶', link: '/interview/Vue/advanced' },
+                    ]
+                },
+                {
+                    text: '网络',
+                    collapsed: true,
+                    items: [
+                        { text: '基础', link: '/interview/Network/' },
+                        { text: '进阶', link: '/interview/Network/advanced' },
+                    ]
+                },
+                {
+                    text: '安全',
+                    collapsed: true,
+                    items: [
+                        { text: '基础', link: '/interview/Security/' },
+                        { text: '进阶', link: '/interview/Security/advanced' },
+                    ]
+                },
+                {
+                    text: '面经',
+                    collapsed: true,
+                    items: [
+                        { text: '基础', link: '/interview/Experience/' },
+                        { text: '进阶', link: '/interview/Experience/advanced' },
+                    ]
                 },
             ],
-            "/articles/uniapp/": [
+            '/tools/': [
                 {
-                    text: "基础",
+                    text: 'Tools',
+                    collapsed: true,
                     items: [
-                    ],
-                },
-                {
-                    text: "代码段",
-                    items: [
-                        {
-                            text: "一键登录",
-                            link: "/articles/uniapp/一键登录",
-                        }
-                    ],
-                },
-            ],
-            "/articles/javaScript-core/": [
-                {
-                    text: "基础",
-                    items: [
-                        {
-                            text: "1. 构造函数、原型、原型链",
-                            link: "/articles/javaScript-core/构造函数、原型、原型链",
-                        },
-                        {
-                            text: "2. 执行上下文和执行上下文栈",
-                            link: "/articles/javaScript-core/执行上下文和执行上下文栈",
-                        },
-                        {
-                            text: "3. this的指向",
-                            link: "/articles/javaScript-core/this的指向",
-                        },
-                    ],
-                },
-                {
-                    text: "进阶",
-                    items: [
-                        {
-                            text: "xx",
-                            link: "/xx",
-                        },
-                    ],
-                },
-            ],
-            "/articles/libs/": [
-                {
-                    items: [
-                        {
-                            text: "1. VForm3低代码初体验",
-                            link: "/articles/libs/VForm3低代码初体验",
-                        },
-                    ],
+                        { text: 'Samlldev', link: '/tools/smalldev.md' },
+                    ]
                 }
             ],
         },
-        socialLinks: [{ icon: "github", link: "https://github.com/mlyz-wdy" }], // 可以连接到 github
+        socialLinks: [{ icon: "github", link: "https://github.com/qkqk16416/blog" }], // 可以连接到 github
     },
 }
-
