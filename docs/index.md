@@ -6,7 +6,7 @@ hero:
   # text: 基于VitePress构建的个人博客
   # tagline: 副内容信息
   image:
-    src: /src/logo.svg
+    src: /src/logo.png
     alt: 网站的 logo 图片
   actions:
     - theme: brand
