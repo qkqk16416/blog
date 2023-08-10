@@ -22,7 +22,7 @@ onMounted(() => {
                     if (content_div) {
                         const before_s_div = document.getElementById("gitalk-page-container") // 获取页面评论组件DOM节点
                         if (before_s_div) {
-                            判断是否已有评论组件节点，有则删除，重新创建。
+                            // 判断是否已有评论组件节点，有则删除，重新创建。
                             content_div.removeChild(before_s_div)
                         }
                         const s_div = document.createElement("div"); // 创建节点
